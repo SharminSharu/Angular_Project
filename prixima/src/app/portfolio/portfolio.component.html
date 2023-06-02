@@ -1,0 +1,60 @@
+<!-- <p>portfolio works!</p> -->
+
+
+<section class="bg-light" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro" *ngFor="let po of port ;let i=index">
+                    <h6>{{po.t}}</h6>
+                    <h1> {{po.p_title}}</h1>
+                    <p class="mx-auto">{{po.p_description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <swiper [slidesPerView]="3" 
+    [spaceBetween]="4"
+    [pagination]="{
+        clickable: true
+      }"
+    [autoplay]="{
+        delay: 2500,
+        disableOnInteraction: false
+      }"
+ 
+ 
+
+   
+     >
+        <ng-template swiperSlide *ngFor="let po of port ;let i=index">
+            <!-- <ng-template swiperSlide  > -->
+
+            <div id="projects-slider">
+                <div class="project">
+                    <div class="overlay"></div>
+                    <img src="{{po.p_logo}}" alt="">
+                    <div class="content">
+                        <h2>{{po.p_title_1}}</h2>
+                        <h6>{{po.p_designation}}</h6>
+                    </div>
+                </div>
+            </div>
+
+
+        </ng-template>
+      
+ 
+
+        <!-- <img src="../../assets/img/bg_banner1.jpg" alt="" srcset=""> -->
+        <!--  
+    <ng-template swiperSlide><img src="../../assets/img/bg_banner2.jpg" alt="" srcset=""></ng-template> -->
+        <!-- <ng-template swiperSlide>Slide 3</ng-template>
+    <ng-template swiperSlide>Slide 4</ng-template>
+    <ng-template swiperSlide>Slide 5</ng-template>
+    <ng-template swiperSlide>Slide 6</ng-template> -->
+    </swiper>
+
+
+</section>

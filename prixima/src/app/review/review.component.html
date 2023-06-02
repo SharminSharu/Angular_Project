@@ -1,0 +1,107 @@
+
+      <div class="row">
+        <div class="col-12" >
+            <div class="intro">
+                <strong style="color:orangered;"> Reviews <u></u> </strong>
+                <h1>Reviews</h1>
+                <p class="mx-auto">The post can be written by someone who works for your company, or you can hire a guest writer to compose the post.</p>
+            </div>
+        </div>
+    </div>
+
+<swiper
+[slidesPerView]="1"
+[spaceBetween]="10"
+[autoplay]="{
+    delay: 2500,
+    disableOnInteraction: false
+  }"
+
+>
+<ng-template swiperSlide  *ngFor="let re of review ;let i=index">
+    <section class="bg-light" id="reviews" style="background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)), 
+url({{re.bg}}), #082032;">
+
+        <div class="review">
+            <div class="person">
+                <img src="{{re.photo}}" alt="">
+                <h5>{{re.name}}</h5>
+                <small>{{re.designation}}</small>
+            </div>
+            <h3>{{re.comment}}</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class="bx bxs-star-half"></i>
+            </div>
+            <i class='bx bxs-quote-alt-left'></i>
+        </div>
+    
+</section>
+</ng-template>
+
+
+
+</swiper>
+
+
+
+
+<!-- 
+    <div class="owl-theme owl-carousel reviews-slider container">
+        <div class="review">
+            <div class="person">
+                <img src="img/team_1.jpg" alt="">
+                <h5>Ralph Edwards</h5>
+                <small>Market Development Manager</small>
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                enim nam exercitationem optio ducimus!</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class="bx bxs-star-half"></i>
+            </div>
+            <i class='bx bxs-quote-alt-left'></i>
+        </div>
+        <div class="review">
+            <div class="person">
+                <img src="img/team_2.jpg" alt="">
+                <h5>Ralph Edwards</h5>
+                <small>Market Development Manager</small>
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                enim nam exercitationem optio ducimus!</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class="bx bxs-star-half"></i>
+            </div>
+            <i class='bx bxs-quote-alt-left'></i>
+        </div>
+        <div class="review">
+            <div class="person">
+                <img src="img/team_3.jpg" alt="">
+                <h5>Ralph Edwards</h5>
+                <small>Market Development Manager</small>
+            </div>
+            <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut quis, rem culpa labore voluptate
+                ullam! In, nostrum. Dicta, vero nihil. Delectus minus vitae rerum voluptatum, excepturi incidunt ut,
+                enim nam exercitationem optio ducimus!</h3>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class="bx bxs-star-half"></i>
+            </div>
+            <i class='bx bxs-quote-alt-left'></i>
+        </div> -->

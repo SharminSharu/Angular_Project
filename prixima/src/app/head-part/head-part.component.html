@@ -1,0 +1,75 @@
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto"  *ngFor="let g of general ;let i=index">
+                    <p> <i class='bx bxs-envelope'></i> {{g.email}}</p>
+                    <p> <i class='bx bxs-phone-call'></i>{{g.phone}}}</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/home">Prixima<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about-body">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/service-body">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/portfolio-body">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"routerLink="/team-body">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/review-body">Reviews</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/blog-body">Blog</a>
+                    </li>
+                </ul>
+                <a routerLink="/contact" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+<header>
+    <div class="footer-top text-center" style=" height:450px; background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(assets/img/bg_banner2.jpg), #082032;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <br><br><br>
+                    <h1 style="color:white">About<br />Us</h1>
+                    <p style="color:grey">It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                    <a href="" class="btn btn-brand">Get Started</a>
+                    <!-- <a href="#" class="btn btn-outline-light ms-3">Our work</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</header>

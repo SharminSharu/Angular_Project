@@ -1,0 +1,144 @@
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70">
+
+
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-auto"  *ngFor="let g of general ;let i=index">
+                    <p> <i class='bx bxs-envelope'></i> {{g.email}}</p>
+                    <p> <i class='bx bxs-phone-call'></i>{{g.phone}}}</p>
+                </div>
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM NAV -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" routerLink="/home">Prixima<span class="dot">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about-body">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/service-body">Services</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" routerLink="/portfolio-body">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"routerLink="/team-body">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/review-body">Reviews</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/blog-body">Blog</a>
+                    </li>
+                </ul>
+                <a routerLink="/contact" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    class="btn btn-brand ms-lg-3">Contact</a>
+            </div>
+        </div>
+    </nav>
+<header>
+    <div class="footer-top text-center" style=" height:450px; background: linear-gradient(0deg, rgba(8, 32, 50, 0.9), rgba(8, 32, 50, 0.9)), url(assets/img/bg_banner1.jpg), #082032;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center text-white">
+                    <br><br><br>
+                    <h1 style="color:white">Blog<br />Details</h1>
+                    <p style="color:grey">It is a long established fact that a reader will be distracted by the readable content of a page</p>
+                    <a href="" class="btn btn-brand">Get Started</a>
+                    <!-- <a href="#" class="btn btn-outline-light ms-3">Our work</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</header>
+<!-- blog -->
+<section id="blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro">
+                    <h6>Blog</h6>
+                    <h1>Blog Posts</h1>
+                    <p class="mx-auto">The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared eith. </p>
+                </div>
+            </div>
+        </div>
+        <div class="row" >
+     
+      
+                    
+      
+            <div class="col-md-8 offset-md-2">
+                <article class="blog-post"  >
+                    <img src="assets/img/project1.jpg" alt="">
+                    <a href="#" class="tag">Programming</a>
+                    <div class="content">
+                        <small>2023</small>
+                        <h5>Web Design trends in 2023</h5>
+                        <p>The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.</p>
+                    </div>
+                </article>
+            </div>
+            <br><hr>
+            <div class="col-md-8 offset-md-2">
+                <article class="blog-post">
+                    <img src="assets/img/project5.jpg" alt="">
+                    <a href="#" class="tag">Marketing</a>
+                    <div class="content">
+                        <small> 2023</small>
+                        <h5>Web Design trends in 2023</h5>
+                        <p>The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.The post can be written by someone who works for your company, or you can hire a guest writer to compose the post. The benefit of hiring an external writer is the post can be shared either on your blog or on another blog that's popular in your industry.</p>
+                    </div>
+                </article>
+            </div> 
+       
+    </div>
+    </div>
+</section>
+<nav aria-label="Page navigation example" style="margin-left:46%;">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" routerLink="/blog-body"aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" routerLink="/blog-body">1</a></li>
+      <li class="page-item"><a class="page-link" routerLink="/blog-body2">2</a></li>
+      <!-- <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+      <li class="page-item">
+        <a class="page-link" routerLink="/blog-body" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+<br>
+
+
+<!-- <app-blog></app-blog> -->
+<app-review></app-review>
+<br><br><br><br>
+<app-client></app-client>
+<app-foot></app-foot>
+

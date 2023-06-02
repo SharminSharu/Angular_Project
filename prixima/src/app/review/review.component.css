@@ -1,0 +1,9 @@
+
+@import "~swiper/css";
+@import "~swiper/css/navigation";
+.swiper {
+  width: 95%;
+  height: 100%;
+}
+
+  

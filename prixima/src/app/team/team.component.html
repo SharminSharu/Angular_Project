@@ -1,0 +1,67 @@
+
+<section id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="intro" *ngFor="let te of team;let i=index">
+                    <h6>{{te.t}}</h6>
+                    <h1>{{te.t_title}}</h1>
+                    <p class="mx-auto">{{te.t_description}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-8" *ngFor="let te of team;let i=index">
+                <div class="team-member">
+                    <div class="image">
+                        <img src="{{te.t_photo}}" alt="">
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+
+                    <h3>{{te.t_name}}</h3>
+                    <h6>{{te.t_designation}}</h6>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 col-md-8">
+                <div class="team-member">
+                    <div class="image">
+                        <img src="img/team_2.jpg" alt="">
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+
+                    <h5>Kathryn Murphy</h5>
+                    <p>Ethical Hacker</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-8">
+                <div class="team-member">
+                    <div class="image">
+                        <img src="img/team_3.jpg" alt="">
+                        <div class="social-icons">
+                            <a href="#"><i class='bx bxl-facebook'></i></a>
+                            <a href="#"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-instagram'></i></a>
+                            <a href="#"><i class='bx bxl-pinterest'></i></a>
+                        </div>
+                        <div class="overlay"></div>
+                    </div>
+
+                    <h5>Darrell Steward</h5>
+                    <p>Software Developer</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
+</section>
